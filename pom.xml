@@ -104,44 +104,6 @@
                 </dependencies>
             </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-enforcer-plugin</artifactId>
-                <version>3.0.0-M2</version> <!-- find the latest version at http://maven.apache.org/plugins/maven-enforcer-plugin/ -->
-                <executions>
-                    <execution>
-                        <id>enforce-ban-duplicate-classes</id>
-                        <goals>
-                            <goal>enforce</goal>
-                        </goals>
-                        <configuration>
-                            <rules>
-                                <dependencyConvergence/>
-                                <banDuplicateClasses>
-                                    <ignoreClasses>
-                                        <!--&lt;!&ndash; example of ignoring one specific class &ndash;&gt;-->
-                                        <!--<ignoreClass>com.xyz.i18n.Messages</ignoreClass>-->
-
-                                        <!--&lt;!&ndash; example of ignoring with wildcards &ndash;&gt;-->
-                                        <ignoreClass>org.hamcrest.*</ignoreClass>
-                                    </ignoreClasses>
-                                    <findAllDuplicates>true</findAllDuplicates>
-                                </banDuplicateClasses>
-                            </rules>
-                            <fail>true</fail>
-                        </configuration>
-                    </execution>
-                </executions>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>extra-enforcer-rules</artifactId>
-                        <version>1.2</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-
-
         </plugins>
     </build>
 
