@@ -3,4 +3,3 @@ target
 *.iml
 .idea
 dependency-reduced-pom.xml
-src/main/resources/
