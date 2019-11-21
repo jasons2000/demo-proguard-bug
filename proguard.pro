@@ -9,6 +9,7 @@
     *;
 }
 
+-libraryjars <java.home>/jmods/java.xml.jmod(!**.jar;!module-info.class)
 -libraryjars <java.home>/jmods/java.base.jmod(!**.jar;!module-info.class)
 -libraryjars <java.home>/jmods/java.compiler.jmod(!**.jar;!module-info.class)
 -libraryjars <java.home>/jmods/java.datatransfer.jmod(!**.jar;!module-info.class)
